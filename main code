@@ -1,0 +1,27 @@
+import requests
+def get_ip_info():
+    """Fetches public IP address and basic geolocation data."""
+    try:
+        response = requests.get("https://ipapi.co/json/", timeout=5)
+        if response.status_code == 200:
+            data = response.json()
+            info = {
+                "ip": data.get("ip"),
+                "city": data.get("city"),
+                "region": data.get("region"),
+                "country": data.get("country_name"),
+                "org": data.get("org")
+            }
+            print("[+] IP info retrieved successfully.")
+            return info
+        else:
+            print(f"[-] Failed to fetch IP info. Status: {response.status_code}")
+            return None
+    except Exception as e:
+        print(f"[-] Error fetching IP info: {e}")
+        return None
+if __name__ == "__main__":
+    print(get_ip_info())
+#HOW TO RUN
+#INSTALL PYTHON & REQUEST LIBLARIES
+#OR JUST TEXT ME., WILL BE DONE FOR 25-100$. MY TELEGRAM: @Myhamed91
