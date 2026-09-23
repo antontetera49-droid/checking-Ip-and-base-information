@@ -1,2 +1,6 @@
 # checking-Ip-and-base-information
-This script checks IP, and base information abou user like: country, IP, region, city. If you want to integrate it in your project, customize, upgrade current version or just dont wanna to set it by yourself. Just type me. Will be done for 25-100$. My telegram: @Myhamed91
+This script checks IP, and base information abou user like: country, IP, region, city. 
+
+👉 Need custom features or business solutions? Write to Telegram: [@Myhamed91](https://t.me/Myhamed91)
+
+Telegram (https://t.me/Myhamed91)
